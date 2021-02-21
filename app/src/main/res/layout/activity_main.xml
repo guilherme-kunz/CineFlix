@@ -1,4 +1,6 @@
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,25 +10,28 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/popular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/popular"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/most_popular_movies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/most_popular_movies" />
+            android:text="@string/most_popular_movies"
+            android:textColor="@android:color/secondary_text_dark" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/popular_movies"
+            android:id="@+id/popular_movies_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -35,28 +40,62 @@
             android:paddingEnd="16dp" />
 
         <TextView
+            android:id="@+id/top_rated"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/top_rated"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/highest_rated_movies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/highest_rated_movies" />
+            android:text="@string/highest_rated_movies"
+            android:textColor="@android:color/secondary_text_dark" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/top_rated_movies"
+            android:id="@+id/top_rated_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <TextView
+            android:id="@+id/upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/upcoming"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stay_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/stay_updated"
+            android:textColor="@android:color/secondary_text_dark" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upcoming_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
             android:clipToPadding="false"
             android:paddingStart="16dp"
             android:paddingEnd="16dp" />
@@ -64,4 +103,3 @@
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
-
