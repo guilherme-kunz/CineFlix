@@ -1,7 +1,8 @@
-package guilhermekunz.com.br.cineflix
+package guilhermekunz.com.br.cineflix.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import guilhermekunz.com.br.cineflix.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
