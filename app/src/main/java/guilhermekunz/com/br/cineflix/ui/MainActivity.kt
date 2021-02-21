@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onPopularMoviesFetched(movies: List<Movie>) {
-        Log.d("MainActivity", "Movies: $movies")
+        popularMoviesAdapter.updateMovies(movies)
     }
 
     private fun onError() {
