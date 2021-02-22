@@ -1,6 +1,5 @@
 package guilhermekunz.com.br.cineflix.api
 
-import android.util.Log
 import guilhermekunz.com.br.cineflix.data.GetMoviesResponse
 import guilhermekunz.com.br.cineflix.data.Movie
 import retrofit2.Call
@@ -22,9 +21,11 @@ object MoviesRepository {
         api = retrofit.create(Api::class.java)
     }
 
-    fun getPopularMovies(page: Int = 1,
-                         onSuccess: (movies: List<Movie>) -> Unit,
-                         onError: () -> Unit) {
+    fun getPopularMovies(
+        page: Int = 1,
+        onSuccess: (movies: List<Movie>) -> Unit,
+        onError: () -> Unit
+    ) {
         api.getPopularMovies(page = page)
             .enqueue(object : Callback<GetMoviesResponse> {
                 override fun onResponse(
@@ -39,12 +40,15 @@ object MoviesRepository {
                         } else {
                             onError.invoke()
                         }
+                    } else {
+                        onError.invoke()
                     }
                 }
 
                 override fun onFailure(call: Call<GetMoviesResponse>, t: Throwable) {
                     onError.invoke()
                 }
+
             })
     }
 
@@ -105,7 +109,9 @@ object MoviesRepository {
                 override fun onFailure(call: Call<GetMoviesResponse>, t: Throwable) {
                     onError.invoke()
                 }
+
             })
+
     }
 
 }

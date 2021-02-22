@@ -11,10 +11,13 @@ import guilhermekunz.com.br.cineflix.R
 import guilhermekunz.com.br.cineflix.data.Movie
 
 class MoviesAdapter(
-    private var movies: MutableList<Movie>
+    private var movies: MutableList<Movie>,
+    private val onMovieClick: (movie: Movie) -> Unit
 ) : RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): MovieViewHolder {
         val view = LayoutInflater
             .from(parent.context)
             .inflate(R.layout.item_movie, parent, false)
@@ -36,14 +39,15 @@ class MoviesAdapter(
     }
 
     inner class MovieViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-        private val poster: ImageView = itemView.findViewById(R.id.item_movie_poster)
+        private val poster: ImageView =
+            itemView.findViewById(R.id.item_movie_poster)
 
         fun bind(movie: Movie) {
             Glide.with(itemView)
                 .load("https://image.tmdb.org/t/p/w342${movie.posterPath}")
                 .transform(CenterCrop())
                 .into(poster)
+            itemView.setOnClickListener { onMovieClick.invoke(movie) }
         }
     }
 }
