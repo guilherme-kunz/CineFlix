@@ -11,9 +11,11 @@ Este aplicativo foi desenvolvido seguindo um [Tutorial](https://www.arthlimchiu.
 
 ## Bibliotecas utilizadas 
 
--[Retrofit](https://square.github.io/retrofit/) - para lidar com recursos relacionados à rede
--[Gson](https://github.com/google/gson) - para analisar objetos JSON da API TMDb
--[Glide](https://github.com/bumptech/glide) - biblioteca de carregamento de imagens
+<ul>
+<li><a href="https://square.github.io/retrofit/">Retrofit</a> - para lidar com recursos relacionados à rede</li>
+<li><a href="https://github.com/google/gson">Gson</a> - para analisar objetos JSON da API TMDb</li>
+<li><a href="https://github.com/bumptech/glide">Glide</a> - biblioteca de carregamento de imagens</li>
+</ul>
 
 ## Contato
 
