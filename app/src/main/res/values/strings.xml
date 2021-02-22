@@ -7,4 +7,9 @@
     <string name="highest_rated_movies">Highest rated movies of all time</string>
     <string name="upcoming">Upcoming</string>
     <string name="stay_updated">Stay updated with the latest movies</string>
+    <string name="filmes_mais_populares">Filmes mais populares</string>
+    <string name="mais_votados">Mais Votados</string>
+    <string name="melhor_classificacao">Filmes com a melhor classificação de todos os tempos</string>
+    <string name="lancamentos">Lançamentos</string>
+    <string name="filmes_mais_recentes">Fique atualizado com os filmes mais recentes</string>
 </resources>

@@ -28,9 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/most_popular_movies"
-            android:textColor="@android:color/secondary_text_dark"
-            tools:text="Filmes mais populares" />
+            android:text="@string/filmes_mais_populares"
+            android:textColor="@android:color/secondary_text_dark" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/popular_movies_list"
@@ -48,11 +47,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/top_rated"
+            android:text="@string/mais_votados"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="Mais Votados" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/highest_rated_movies"
@@ -60,9 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/highest_rated_movies"
-            android:textColor="@android:color/secondary_text_dark"
-            tools:text="Filmes com a melhor classificação de todos os tempos" />
+            android:text="@string/melhor_classificacao"
+            android:textColor="@android:color/secondary_text_dark" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/top_rated_list"
@@ -80,11 +77,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/upcoming"
+            android:text="@string/lancamentos"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="Lançamentos" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/stay_updated"
@@ -92,9 +88,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/stay_updated"
-            android:textColor="@android:color/secondary_text_dark"
-            tools:text="Fique atualizado com os filmes mais recentes" />
+            android:text="@string/filmes_mais_recentes"
+            android:textColor="@android:color/secondary_text_dark" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/upcoming_list"
